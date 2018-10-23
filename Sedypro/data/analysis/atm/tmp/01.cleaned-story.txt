@@ -1,0 +1,33 @@
+S0001 System initialize the application
+S0002 System asks user to insert a CreditCard
+S0003 User clicks on the InsertCardButton
+S0004 System asks user to enter an AccountNumber
+S0005 User types 1 2 3 4 on the KeyPad
+S0006 User clicks on the ConfirmButton
+S0007 System asks to enter a PinNumber
+S0008 User types 1 2 3 4 on the KeyPad 
+S0009 User clicks on the ConfirmButton
+S0010 System checks UserAccount and UserPin
+S0011 System waits 2000 milliseconds
+S0012 System displays the MainMenu balance withdraw deposit exit choice 
+S0013 User selects the DepositFunds operation option 3
+S0014 User clicks on the ConfirmButton
+S0015 System creates a DepositTransaction
+S0016 System asks the user to enter the DepositAmount in cents
+S0017 User types 1 0 0 0 0 on the KeyPad to specify 100.0 
+S0018 User clicks on the ConfirmButton
+S0019 System asks the user to insert an envelope containing 100.0 
+S0020 User clicks on the PutTheMoneyButton
+S0021 System informs the user that the envelope has been received 
+S0022 System waits 5000 milliseconds
+S0023 System credits the user account with the specified amount
+S0024 System updates the database
+S0025 System displays the MainMenu
+S0026 User selects the exit operation option 4
+S0027 User clicks on the ConfirmButton
+S0028 System displays that the system is exiting
+S0029 System waits 1000 milliseconds
+S0030 System displays the CreditCard can be removed
+S0031 System says thank you and goodbye
+S0032 System waits 4000 milliseconds
+S0033 System asks user to insert a CreditCard

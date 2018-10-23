@@ -1,0 +1,28 @@
+
+#ref: https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html
+#lineFormat := [word-to-ignore]
+
+a
+an
+and
+are
+as
+at
+be
+by
+for
+from
+has
+he
+in
+it
+its
+of
+on
+that
+the
+to
+was
+were
+will
+with

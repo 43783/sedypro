@@ -1,0 +1,8 @@
+
+#lineFormat := ( [story-word-type] + ':' + [story-word] + ( ',' +[trace-word-type] + ':' + [trace-word] )*
+
+s:user,s:keypad
+a:check,a:validate
+a:click,a:ActionPerformed
+a:types,s:ActionPerformed
+a:select,s:ActionPerformed

@@ -1,0 +1,33 @@
+System displays the application startview
+System asks to insert a credit card
+User clicks on the insertcard button
+System asks to enter an account number
+User types 1234 on the keypad
+User clicks on the confirm button
+System asks to enter a pin number
+User types 1234 on the keypad 
+User clicks on the confirm button
+System validates the account and the pin numbers on the database
+System displays the main menu
+User type 3 on the keypad for deposit funds
+User clicks on the confirm button
+HIDDEN: system creates a deposit transaction
+HIDDEN: system execute the deposit transaction
+System asks to enter a deposit amount
+User types 10000 on the keypad (to deposit 100$) 
+User clicks on the confirm button
+System asks to insert an deposit envelope containing 100$
+User inserts an envelope
+User clicks on the put-the-money button
+System informs that the envelope has been received 
+HIDDEN: system make a deposit on the current account
+System warns that the amount will not be available until verified
+System waits a certain time amount
+System displays the main menu
+User type 4 on the keypad to exit the application
+User clicks on the confirm button
+System displays exiting the system
+System asks to remove the credit card
+System displays thank you
+System waits a certain amount of time
+System goes to step 2 (System displays the main menu)

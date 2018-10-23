@@ -1,0 +1,33 @@
+System initialize the application
+System asks user to insert a CreditCard
+User clicks on the InsertCardButton
+System asks user to enter an AccountNumber
+User types 1,2,3,4 on the KeyPad
+User clicks on the ConfirmButton
+System asks to enter a PinNumber
+User types 1,2,3,4 on the KeyPad 
+User clicks on the ConfirmButton
+System checks UserAccount and UserPin
+System waits 2000 milliseconds
+System displays the MainMenu (balance,withdraw,deposit,exit,choice)
+User selects the DepositFunds operation, option 3
+User clicks on the ConfirmButton
+System creates a DepositTransaction
+System asks the user to enter the DepositAmount in cents
+User types 1,0,0,0,0 on the KeyPad to specify 100.0$
+User clicks on the ConfirmButton
+System asks the user to insert an envelope containing 100.0$
+User clicks on the PutTheMoneyButton
+System informs the user that the envelope has been received 
+System waits 5000 milliseconds
+System credits the user account with the specified amount
+System updates the database
+System displays the MainMenu
+User selects the exit operation, option 4
+User clicks on the ConfirmButton
+System displays that the system is exiting
+System waits 1000 milliseconds
+System displays the CreditCard can be removed
+System says thank you and goodbye
+System waits 4000 milliseconds
+System asks user to insert a CreditCard

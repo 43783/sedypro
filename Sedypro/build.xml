@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="sydepro script builder" default="default">
+	
+    <!-- script properties -->
+
+	<property name="name" value="sedypro"/>
+    <property name="version" value="1.0.0"/>
+	<property name="author" value="Eric Harth"/>
+	<property name="base.dir" value="."/>
+	<property name="dist.dir" location="dist"/>
+    <property name="mainclass" value="ch.hesge.csim2.ui.AppStartup"/>
+    <property name="classpath" value="."/>
+	
+	<available file="${base.dir}/lib" type="dir" property="lib-folder-present2"/>
+
+	<!-- initialization -->
+
+	<target name="init">
+		<tstamp />
+	   	<mkdir dir="${dist.dir}/bin" />
+	   	<mkdir dir="${dist.dir}/lib" />
+	   	<mkdir dir="${dist.dir}/log" />
+	</target>	
+
+	<!-- cleaning -->
+	
+	<target name="clean">
+	   	<delete dir="${dist.dir}" />
+	</target>
+
+	<!-- create script -->
+	
+    <target name="create-script">
+		<echo file="${dist.dir}/sedypro.cmd" append="false">
+		java -Xmx4096m -Xmx4096m -classpath bin/*;lib/* ch.hesge.sedypro.fileanalyser.FileAnalyser %1 %2
+		</echo>    	
+    </target>
+
+	<!-- copy dependencies -->
+
+	<target name="copy-dependencies" if="lib-folder-present2">		
+		<copy todir="${dist.dir}/lib" flatten="true">
+			<fileset dir="${basedir}/lib" includes="**/*.jar" excludes="**/*src*.jar"/>
+		</copy>		    	
+    </target>
+	
+	<!-- distribution -->
+	
+	<target name="dist" depends="create-script,copy-dependencies">
+        <jar destfile="${dist.dir}/bin/${name}-${version}.v${DSTAMP}${TSTAMP}.jar">
+            <manifest>
+		        <attribute name="Implementation-Vendor" value="HEG, Geneva, Switzerland" />
+		        <attribute name="Implementation-Title" value="${name}" />
+		        <attribute name="Implementation-Version" value="${version}" />
+        		<attribute name="Built-By" value="${author}" />
+            	<attribute name="Main-class" value="${mainclass}" />
+                <attribute name="Class-Path" value="${classpath}"/>
+            </manifest>
+            <fileset dir="bin" includes="**/*.class"/>
+        </jar>
+    </target>
+	
+	<!-- default task -->
+	
+	<target name="default" depends="clean,init,dist" />
+
+</project>

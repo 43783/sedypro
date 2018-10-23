@@ -1,0 +1,23 @@
+
+#lineFormat := [original-string] + ( ',' + [replacement-string] )?
+
+java.awt.
+java.awt.dimension.
+java.awt.event.
+javax.swing.
+plaf.
+event.
+com.apple.laf.
+java.lang.
+com.kenai.simulator.atm.
+ACTION_PERFORMED
+JPanel,Panel
+JFrame,Frame
+jButton,Button
+JButton,Button
+jPanel,Panel
+LString
+ATMGUI,AtmGui
+diplayInsertCardImage,displayInsertCardImage
+diplay,display
+Insertaction,InsertAction

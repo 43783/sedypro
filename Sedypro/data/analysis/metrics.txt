@@ -1,0 +1,9 @@
+
+LOC
+
+jgenetic		360
+jatm			2068
+jhotel		20072
+jhotdraw		49686
+jedit		165146
+argouml		292266

@@ -1,0 +1,20 @@
+
+#lineFormat := ( [story-word-type] + ':' + [story-word] + ( ',' +[trace-word-type] + ':' + [trace-word] )*
+
+s:user,s:keypad
+a:check,a:validate
+a:click,a:ActionPerformed
+a:types,s:ActionPerformed
+a:select,s:ActionPerformed
+
+s:user,s:button,a:actionperform,s:keypad,s:action,s:actionlistener,s:button,s:listener
+s:system,s:gui,s:screen,s:panel,s:frame,s:database,s:button
+
+a:ask,a:display,a:message,a:authenticate,c:message
+a:check,a:validate
+a:click,a:ActionListener,a:ActionEvent,a:check,a:ActionPerformed
+a:init,a:main,a:new,a:connect,a:update,a:start
+a:type,a:input,a:ActionListener,a:ActionPerformed,a:get
+
+c:application,c:component,c:main,c:database
+c:key,c:input,a:actionperformed

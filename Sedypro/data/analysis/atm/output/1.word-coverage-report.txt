@@ -1,0 +1,24 @@
+Text Coverage Information
+-------------------------
+
+Story words:    63
+Trace words:    225
+Matching words: 64
+Story coverage: 81%
+Trace coverage: 31%
+
+Unmatched trace words: 
+  0.0, 0.5, 106, 107, 1234, 130.0, 141, 15, 1519728225349, 1519728226703, 1519728227415, 1519728228028, 
+  1519728228996, 1519728231628, 1519728233100, 1519728233743, 1519728234311, 1519728235087, 1519728235974, 
+  1519728243463, 1519728244884, 1519728247007, 1519728247804, 1519728248604, 1519728249164, 1519728249596, 
+  1519728250607, 1519728253605, 1519728263160, 1519728264376, 160, 16777217, 170x20, 208, 230, 230.0, 
+  286x157, 288, 326de728, 398, 3a419706, 567x380, 605, 71, 75, 95x29, action, actionevent, alignmentx, 
+  alignmenty, anyenclosed, args, atmgui, atmscreen, authenticate, available, bank, base, border, bottom, 
+  button0, button1, button2, button3, button4, cancel, cash, cashdispenser, checks, clear, clear., cmd, 
+  components, connect, data, databaseutilities, db, dbname, defaultcapable, defaulticon, deposited, dimension, 
+  disabled, disabledicon, disabledselectedicon, disconnect, dollar, draw, dynamic, eed1f14, ensure, envelopecontaining, 
+  evt, execute, existence, extra, false, flags, frame, get, grouplayout, height, icons, image, imgurl, 
+  init, insetsuiresource, invalid, just, layout, left, line, margin, maximumsize, message, minimumsize, 
+  modifiers, ms, my, new, not, or, out, paintborder, paintfocus, panel, performed, please, preferredsize, 
+  pressedicon, prompt, received.note, right, rolloverenabled, rollovericon, rolloverselectedicon, screen, 
+  selectedicon, slot, slotaction, text, top, total, true, type, until, verify, view, we, welcome, when, 
