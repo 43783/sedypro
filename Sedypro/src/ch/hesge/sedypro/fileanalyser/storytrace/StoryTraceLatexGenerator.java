@@ -103,29 +103,29 @@ public class StoryTraceLatexGenerator {
 		latexContent += "\\section{Matching sequence}\n";
 		latexContent += getMappingGrid(); 
 
-//		latexContent += "\\clearpage\n";
-//		latexContent += "\\section{Story analysis}\n";
-//		latexContent += "\n";
-//
-//		for (int i = 0; i < storyMatrix.getRowSize(); i++) {
-//
-//			latexContent += "\\subsection{" + storySteps.get(i) + "}\n";
-//			latexContent += "\\begin{tikzpicture}\n"; 
-//			latexContent += "\\matrix {\n"; 
-//			latexContent += getOccurenceGraph(i);
-//			latexContent += getTfidfGraph1(i);
-//			latexContent += getMappingGraph1(i);
-//			latexContent += getTfidf2Graph(i);
-//			latexContent += getMappingGraph2(i);
-//			latexContent += getTripletGraph(i);
-//			latexContent += getEnterExitGraph(i);
-//			latexContent += getMappingGraph3(i);
-//			latexContent += getMappingGraph4(i);
-//			//latexContent += getEnterExitGraph2(i);
-//			latexContent += "};\n"; 
-//			latexContent += "\\end{tikzpicture}\n"; 
-//			latexContent += "\n";
-//		}
+		latexContent += "\\clearpage\n";
+		latexContent += "\\section{Story analysis}\n";
+		latexContent += "\n";
+
+		for (int i = 0; i < storyMatrix.getRowSize(); i++) {
+
+			latexContent += "\\subsection{" + storySteps.get(i) + "}\n";
+			latexContent += "\\begin{tikzpicture}\n"; 
+			latexContent += "\\matrix {\n"; 
+			latexContent += getOccurenceGraph(i);
+			latexContent += getTfidfGraph1(i);
+			latexContent += getMappingGraph1(i);
+			latexContent += getTfidf2Graph(i);
+			latexContent += getMappingGraph2(i);
+			latexContent += getTripletGraph(i);
+			latexContent += getEnterExitGraph(i);
+			latexContent += getMappingGraph3(i);
+			latexContent += getMappingGraph4(i);
+			//latexContent += getEnterExitGraph2(i);
+			latexContent += "};\n"; 
+			latexContent += "\\end{tikzpicture}\n"; 
+			latexContent += "\n";
+		}
 
 		/*
 		latexContent += "\\begin{tikzpicture}\n"; 
